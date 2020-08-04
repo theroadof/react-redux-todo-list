@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import todoStatus from "../../constants/todoStatus";
 import './index.css'
+
 class Todo extends React.Component {
     handleDelete = (e) => {
         e.stopPropagation()

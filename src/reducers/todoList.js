@@ -1,11 +1,6 @@
 import todoStatus from "../constants/todoStatus";
-import {ADD_TODO, DELETE_TODO, MARK_CANCEL, MARK_DONE, SHOW_DONE_TODO_LIST} from "../constants/actionTypes";
-/*
-{
-    text:"example todo",
-    status:todoStatus.DOING
-}
- */
+import {ADD_TODO, DELETE_TODO, MARK_CANCEL, MARK_DONE} from "../constants/actionTypes";
+
 const todoList = (state = [], action) => {
     switch (action.type) {
         case MARK_DONE:

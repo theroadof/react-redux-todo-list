@@ -1,9 +1,10 @@
-.is-done{
+.is-done {
     text-decoration: #cb2431 line-through;
 }
-.delete{
+
+.delete {
     position: absolute;
-    top:-12px;
+    top: -12px;
     right: -8px;
     background: transparent;
     color: white;
@@ -11,7 +12,8 @@
     font-size: 1rem;
     font-weight: bold;
 }
-.todo{
+
+.todo {
     color: #20232a;
     padding: 0.2rem 0.5rem;
     background: #ffe564;

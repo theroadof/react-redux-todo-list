@@ -8,8 +8,8 @@ const {connect} = require("react-redux");
 const mapDispatchToProps = (dispatch) => {
     return {
         deleteTodo: (id) => dispatch(deleteTodo(id)),
-        markDone: (id)=>dispatch(markDone(id)),
-        markCancel: (id)=>dispatch(markCancel(id))
+        markDone: (id) => dispatch(markDone(id)),
+        markCancel: (id) => dispatch(markCancel(id))
     }
 }
 
