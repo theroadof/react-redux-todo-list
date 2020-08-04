@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-tpyes'
+import PropTypes from 'prop-types'
 import Todo from "../Todo";
 
 class TodoList extends React.Component {

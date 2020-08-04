@@ -1,4 +1,5 @@
 import React from "react";
+
 class TodoForm extends React.Component {
     constructor(props) {
         super(props);
@@ -6,14 +7,17 @@ class TodoForm extends React.Component {
             text: ""
         }
 
-        this.handleChang = this.handleChang.bind(this)
+        this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleSubmit() {
-        //todo
+        if (this.state.text.length === 0) {
+            return
+        }
+        this.props.addTodo(this.state.text)
         this.setState({
-            text:''
+            text: ''
         })
     }
 
@@ -25,10 +29,11 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <input type="text" value={this.state.text} onChange={this.handleChange} placeholder="write something to do"/>
-                <input type="submit" value="submit"/>
-            </form>
+            <div>
+                <input type="text" value={this.state.text} onChange={this.handleChange}
+                       placeholder="write something to do"/>
+                <input type="submit" onClick={this.handleSubmit} value="submit"/>
+            </div>
         )
     }
 }
