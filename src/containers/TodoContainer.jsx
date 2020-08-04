@@ -1,5 +1,5 @@
 import Todo from "../components/Todo";
-import {deleteTodo} from "../actions";
+import {deleteTodo, markCancel, markDone} from "../actions";
 
 
 const {connect} = require("react-redux");
@@ -7,7 +7,9 @@ const {connect} = require("react-redux");
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        deleteTodo: (id) => dispatch(deleteTodo(id))
+        deleteTodo: (id) => dispatch(deleteTodo(id)),
+        markDone: (id)=>dispatch(markDone(id)),
+        markCancel: (id)=>dispatch(markCancel(id))
     }
 }
 
