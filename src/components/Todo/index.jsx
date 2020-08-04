@@ -17,10 +17,10 @@ class Todo extends React.Component {
     }
 
     render() {
-        return <div className={`todo ${this.props.status === todoStatus.DOING ? '' : 'is-done'}`}
+        return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
                     onClick={this.handleMark}>
             <span>{this.props.text}</span>
-            <button onClick={this.handleDelete}>x</button>
+            <span className={'delete'} onClick={this.handleDelete}>x</span>
         </div>
     }
 }

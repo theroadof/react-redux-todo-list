@@ -1,3 +1,21 @@
 .is-done{
-    text-decoration: white line-through;
+    text-decoration: #cb2431 line-through;
+}
+.delete{
+    position: absolute;
+    top:-12px;
+    right: -8px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.todo{
+    color: #20232a;
+    padding: 0.2rem 0.5rem;
+    background: #ffe564;
+    border-radius: 0.25rem;
+    position: relative;
+    margin: 0.4rem;
 }
