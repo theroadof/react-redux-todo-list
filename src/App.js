@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+          <h2>Todo List</h2>
         <TodoListContainer/>
         <TodoFormContainer/>
       </header>
