@@ -5,6 +5,17 @@ import TodoListContainer from "./containers/TodoListContainer";
 import DoneListContainer from "./containers/DoneListContainer";
 import {HashRouter, Link, Route} from "react-router-dom";
 import AllTodosContainer from "./containers/AllTodosContainer";
+import {Menu} from "antd";
+import 'antd/dist/antd.css';
+import {
+    AppstoreOutlined,
+    MenuUnfoldOutlined,
+    MenuFoldOutlined,
+    PieChartOutlined,
+    DesktopOutlined,
+    ContainerOutlined,
+    MailOutlined,
+} from '@ant-design/icons';
 
 function App() {
     return (

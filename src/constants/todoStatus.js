@@ -1,4 +1,6 @@
 export default {
     DONE: "DONE",
-    DOING: "DOING"
+    DOING: "DOING",
+    TRUE:true,
+    FALSE:false
 }

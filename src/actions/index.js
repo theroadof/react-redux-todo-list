@@ -26,6 +26,8 @@ export const markCancel = (id) => ({
     id
 });
 
+
+
 export const getAllTodos = (allTodos) =>({
     type: GET_ALL_TODOS,
     allTodos
