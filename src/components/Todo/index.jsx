@@ -22,8 +22,8 @@ class Todo extends React.Component {
     render() {
         return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
                     onClick={this.handleMark}>
-            <Space direction="horizontal" align="center">
-                <Card hoverable={true} size={"small"} bodyStyle={{color:"white",backgroundColor:"black"}}	>{this.props.text}</Card>
+            <Space direction="horizontal" >
+                <Card hoverable={true} size={"small"} bodyStyle={{color:"white",backgroundColor:"#1890ff"}}	>{this.props.text}</Card>
                 <DeleteOutlined onClick={this.handleDelete} style={{color: "#1890ff"}}/>
             </Space>
         </div>

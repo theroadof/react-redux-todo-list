@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +56,7 @@
       <workItem from="1596540423078" duration="7502000" />
       <workItem from="1596550128746" duration="1346000" />
       <workItem from="1596589188933" duration="112000" />
-      <workItem from="1596589314601" duration="21935000" />
+      <workItem from="1596589314601" duration="22396000" />
     </task>
     <task id="LOCAL-00001" summary="[Show_Done_List][Teddy]feature:add doneList component and container">
       <created>1596547053138</created>
@@ -137,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596612621811</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[axios][Teddy]refactor:modify text span to card">
+      <created>1596614087290</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1596614087290</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -177,6 +182,7 @@
     <MESSAGE value="[axios][Teddy]refactor:add title to header" />
     <MESSAGE value="[axios][Teddy]refactor:add CloseOutlined icon to todo" />
     <MESSAGE value="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon" />
+    <MESSAGE value="[axios][Teddy]refactor:modify text span to card" />
+    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:modify text span to card" />
   </component>
 </project>
