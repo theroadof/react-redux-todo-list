@@ -16,7 +16,7 @@ class AllTodos extends React.Component{
         return (
             <div>
                 {this.props.allTodos.map((todo,index)=>
-                    <TodoContainer key={index} id={todo.id} text={todo.content} status={`${todo.status === true?todoStatus.DOING:todoStatus.DONE}`} />
+                    <TodoContainer key={index} id={todo.id} text={todo.text} status={todo.status} />
                 )}
             </div>
         )
