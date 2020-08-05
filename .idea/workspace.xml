@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +57,7 @@
       <workItem from="1596540423078" duration="7502000" />
       <workItem from="1596550128746" duration="1346000" />
       <workItem from="1596589188933" duration="112000" />
-      <workItem from="1596589314601" duration="18476000" />
+      <workItem from="1596589314601" duration="19871000" />
     </task>
     <task id="LOCAL-00001" summary="[Show_Done_List][Teddy]feature:add doneList component and container">
       <created>1596547053138</created>
@@ -117,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596609464265</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[axios][Teddy]refactor:add title to header">
+      <created>1596610577869</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1596610577869</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -154,6 +159,7 @@
     <MESSAGE value="[axios][Teddy]debug:add get all todos by axios api" />
     <MESSAGE value="[axios][Teddy]refactor:add antd style to input form" />
     <MESSAGE value="[axios][Teddy]refactor:add antd style to header" />
-    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:add antd style to header" />
+    <MESSAGE value="[axios][Teddy]refactor:add title to header" />
+    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:add title to header" />
   </component>
 </project>
