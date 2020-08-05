@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import todoStatus from "../../constants/todoStatus";
 import './index.css'
 import {DeleteOutlined} from "@ant-design/icons"
+import {Card , Space} from "antd";
 
 class Todo extends React.Component {
     handleDelete = (e) => {
@@ -21,8 +22,10 @@ class Todo extends React.Component {
     render() {
         return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
                     onClick={this.handleMark}>
-            <span>{this.props.text}</span>
-            <DeleteOutlined onClick={this.handleDelete} style={{color:"#1890ff"}} />
+            <Space direction="horizontal" align="center">
+                <Card hoverable={true} size={"small"} bodyStyle={{color:"white",backgroundColor:"black"}}	>{this.props.text}</Card>
+                <DeleteOutlined onClick={this.handleDelete} style={{color: "#1890ff"}}/>
+            </Space>
         </div>
     }
 }

@@ -21,7 +21,6 @@ function App() {
                         <li className="App-link"><Link to={"/"}>go to list page</Link></li>
                         <li><Link to={"/all-list"}>get all list</Link></li>
                     </ul>
-
                     <Footer>
                         <Route path={"/done-list"} component={DoneListContainer}/>
                         <Route exact path={"/"} render={() => {
@@ -40,8 +39,6 @@ function App() {
                             )
                         }}/>
                     </Footer>
-
-
                 </Layout>
             </HashRouter>
         </React.Fragment>

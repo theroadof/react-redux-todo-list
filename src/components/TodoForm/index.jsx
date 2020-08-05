@@ -1,6 +1,6 @@
 import React from "react";
 import 'antd/dist/antd.css';
-import {Input,Button} from "antd";
+import {Input,Button,Space} from "antd";
 
 class TodoForm extends React.Component {
     constructor(props) {
@@ -32,9 +32,11 @@ class TodoForm extends React.Component {
     render() {
         return (
             <div>
-                <Input style={{ width: 200 }} value={this.state.text} onChange={this.handleChange}
-                       placeholder="write something to do"/>
-                <Button type="primary" onClick={this.handleSubmit} >submit</Button>
+                <Space>
+                    <Input style={{ width: 200 }} value={this.state.text} onChange={this.handleChange}
+                           placeholder="write something to do"/>
+                    <Button type="primary" onClick={this.handleSubmit} >submit</Button>
+                </Space>
             </div>
         )
     }

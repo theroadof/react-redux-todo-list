@@ -1,5 +1,5 @@
 .is-done {
-    text-decoration: #cb2431 line-through;
+    text-decoration: white line-through;
 }
 
 /*.delete {*/
@@ -16,7 +16,7 @@
 .todo {
     padding: 0.2rem 0.5rem;
     width: 500px;
-    background-color: lightblue;
+    background-color: white;
     border-radius: 0.25rem;
     position: relative;
     margin: 0.4rem;

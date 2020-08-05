@@ -6,7 +6,7 @@
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/allTodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/allTodos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +58,7 @@
       <workItem from="1596540423078" duration="7502000" />
       <workItem from="1596550128746" duration="1346000" />
       <workItem from="1596589188933" duration="112000" />
-      <workItem from="1596589314601" duration="20445000" />
+      <workItem from="1596589314601" duration="21935000" />
     </task>
     <task id="LOCAL-00001" summary="[Show_Done_List][Teddy]feature:add doneList component and container">
       <created>1596547053138</created>
@@ -130,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596611972996</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon">
+      <created>1596612621811</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596612621811</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -169,6 +176,7 @@
     <MESSAGE value="[axios][Teddy]refactor:add antd style to header" />
     <MESSAGE value="[axios][Teddy]refactor:add title to header" />
     <MESSAGE value="[axios][Teddy]refactor:add CloseOutlined icon to todo" />
-    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:add CloseOutlined icon to todo" />
+    <MESSAGE value="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon" />
+    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon" />
   </component>
 </project>
