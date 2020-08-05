@@ -14,7 +14,7 @@ class TodoListApi {
     }
 
     static createTodo(todo) {
-        return axios.post(TODO_LIST_API_URL, todo);
+        return axios.post(TODO_LIST_API_URL, JSON.stringify(todo));
     }
 
     static deleteTodoById(id) {

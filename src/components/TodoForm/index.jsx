@@ -1,6 +1,6 @@
 import React from "react";
 import 'antd/dist/antd.css';
-import {Input,Button,Space} from "antd";
+import {Input, Button, Space} from "antd";
 import TodoListApi from "../../model/axios";
 
 class TodoForm extends React.Component {
@@ -19,6 +19,10 @@ class TodoForm extends React.Component {
             return
         }
         this.props.addTodo(this.state.text);
+        TodoListApi.createTodo({
+            text: this.state.text,
+            status: true
+        });
         this.setState({
             text: ''
         })
@@ -34,9 +38,9 @@ class TodoForm extends React.Component {
         return (
             <div>
                 <Space>
-                    <Input style={{ width: 200 }} value={this.state.text} onChange={this.handleChange}
+                    <Input style={{width: 200}} value={this.state.text} onChange={this.handleChange}
                            placeholder="write something to do"/>
-                    <Button type="primary" onClick={this.handleSubmit} >submit</Button>
+                    <Button type="primary" onClick={this.handleSubmit}>submit</Button>
                 </Space>
             </div>
         )

@@ -1,12 +1,11 @@
 import React from "react";
 import TodoListApi from "../../model/axios";
 import TodoContainer from "../../containers/TodoContainer";
-import todoStatus from "../../constants/todoStatus";
 
-class AllTodos extends React.Component{
+class AllTodos extends React.Component {
     componentWillMount() {
-        TodoListApi.getAllTodos().then((response)=>{
-            let allTodos = response.data
+        TodoListApi.getAllTodos().then((response) => {
+            let allTodos = response.data;
             this.props.getAllTodosFromMockAPI(allTodos)
         });
     }
@@ -15,8 +14,8 @@ class AllTodos extends React.Component{
         console.log(this.props.allTodos)
         return (
             <div>
-                {this.props.allTodos.map((todo,index)=>
-                    <TodoContainer key={index} id={todo.id} text={todo.text} status={todo.status} />
+                {this.props.allTodos.map((todo, index) =>
+                    <TodoContainer key={index} id={todo.id} text={todo.text} status={todo.status}/>
                 )}
             </div>
         )
