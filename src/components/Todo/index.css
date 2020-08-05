@@ -14,10 +14,9 @@
 /*}*/
 
 .todo {
-    color: #20232a;
     padding: 0.2rem 0.5rem;
     width: 500px;
-    background: #ffe564;
+    background-color: lightblue;
     border-radius: 0.25rem;
     position: relative;
     margin: 0.4rem;

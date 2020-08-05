@@ -5,10 +5,10 @@ import TodoListContainer from "./containers/TodoListContainer";
 import DoneListContainer from "./containers/DoneListContainer";
 import {HashRouter, Link, Route} from "react-router-dom";
 import AllTodosContainer from "./containers/AllTodosContainer";
-import {Menu, PageHeader, Layout} from "antd";
+import { PageHeader, Layout} from "antd";
 import 'antd/dist/antd.css';
 
-const {Header, Footer, Sider, Content} = Layout;
+const {Footer} = Layout;
 
 function App() {
     return (
