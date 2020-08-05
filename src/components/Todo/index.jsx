@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 import todoStatus from "../../constants/todoStatus";
 import './index.css'
+import CloseOutlined from "@ant-design/icons"
 
 class Todo extends React.Component {
     handleDelete = (e) => {
@@ -21,7 +22,8 @@ class Todo extends React.Component {
         return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
                     onClick={this.handleMark}>
             <span>{this.props.text}</span>
-            <span className={'delete'} onClick={this.handleDelete}>x</span>
+            <CloseOutlined onClick={this.handleDelete} />
+            <span onClick={this.handleDelete}>x</span>
         </div>
     }
 }

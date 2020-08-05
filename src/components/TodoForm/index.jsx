@@ -32,9 +32,9 @@ class TodoForm extends React.Component {
     render() {
         return (
             <div>
-                <Input type="text" value={this.state.text} onChange={this.handleChange}
+                <Input style={{ width: 200 }} value={this.state.text} onChange={this.handleChange}
                        placeholder="write something to do"/>
-                <Button type="primary" size="small" onClick={this.handleSubmit} >submit</Button>
+                <Button type="primary" onClick={this.handleSubmit} >submit</Button>
             </div>
         )
     }

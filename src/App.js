@@ -7,22 +7,12 @@ import {HashRouter, Link, Route} from "react-router-dom";
 import AllTodosContainer from "./containers/AllTodosContainer";
 import {Menu, PageHeader} from "antd";
 import 'antd/dist/antd.css';
-import {
-    AppstoreOutlined,
-    MenuUnfoldOutlined,
-    MenuFoldOutlined,
-    PieChartOutlined,
-    DesktopOutlined,
-    ContainerOutlined,
-    MailOutlined,
-} from '@ant-design/icons';
 
 function App() {
     return (
         <React.Fragment>
             <HashRouter>
-                <PageHeader>
-                    <p>Todo List</p>
+                <PageHeader title={"Todo List"}>
                     <ul>
                         <li className="App-link"><Link to={"/done-list"}>go to done page</Link></li>
                         <li className="App-link"><Link to={"/"}>go to list page</Link></li>

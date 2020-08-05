@@ -2,16 +2,16 @@
     text-decoration: #cb2431 line-through;
 }
 
-.delete {
-    position: absolute;
-    top: -12px;
-    right: -8px;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: bold;
-}
+/*.delete {*/
+/*    position: absolute;*/
+/*    top: -12px;*/
+/*    right: -8px;*/
+/*    background: transparent;*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*    font-size: 1rem;*/
+/*    font-weight: bold;*/
+/*}*/
 
 .todo {
     color: #20232a;
