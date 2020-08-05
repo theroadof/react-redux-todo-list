@@ -4,7 +4,9 @@ const TODO_LIST_API_URL = "https://5e9ec500fb467500166c4658.mockapi.io/todos";
 
 class TodoListApi {
     static getAllTodos() {
-        return axios.get(TODO_LIST_API_URL);
+        return axios.get(TODO_LIST_API_URL).then((response)=>{
+            return response
+        });
     }
 
     static updateTodoById(id) {

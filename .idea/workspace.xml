@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="[Show_Done_List][Teddy]feature:implement go to done page by using router">
+    <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/AllTodos/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/AllTodosContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reducers/allTodos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DoneList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DoneList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/actionTypes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/actionTypes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/DoneListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/DoneListContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TodoContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TodoContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TodoFormContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TodoFormContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TodoListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TodoListContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/axios.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/todoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/todoList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +61,7 @@
       <workItem from="1596540423078" duration="7502000" />
       <workItem from="1596550128746" duration="1346000" />
       <workItem from="1596589188933" duration="112000" />
-      <workItem from="1596589314601" duration="4267000" />
+      <workItem from="1596589314601" duration="13850000" />
     </task>
     <task id="LOCAL-00001" summary="[Show_Done_List][Teddy]feature:add doneList component and container">
       <created>1596547053138</created>
@@ -96,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596551156443</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Show_Done_List][Teddy]debug:fix done list index bug">
+      <created>1596595575568</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596595575568</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -129,6 +131,7 @@
     <MESSAGE value="[Show_Done_List][Teddy]feature:implement go to done page by using router" />
     <MESSAGE value="[Show_Done_List][Teddy]refactor:move header into Router tag" />
     <MESSAGE value="[Show_Done_List][Teddy]feature:add axios and api" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Show_Done_List][Teddy]feature:add axios and api" />
+    <MESSAGE value="[Show_Done_List][Teddy]debug:fix done list index bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Show_Done_List][Teddy]debug:fix done list index bug" />
   </component>
 </project>

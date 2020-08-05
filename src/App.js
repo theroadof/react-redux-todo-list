@@ -4,6 +4,7 @@ import TodoFormContainer from "./containers/TodoFormContainer";
 import TodoListContainer from "./containers/TodoListContainer";
 import DoneListContainer from "./containers/DoneListContainer";
 import {HashRouter, Link, Route} from "react-router-dom";
+import AllTodosContainer from "./containers/AllTodosContainer";
 
 function App() {
     return (
@@ -28,7 +29,7 @@ function App() {
                     <Route path={"/all-list"} render={()=>{
                         return (
                             <div>
-
+                                <AllTodosContainer/>
                             </div>
                         )
                     }}/>

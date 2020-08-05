@@ -1,6 +1,6 @@
 import {
     ADD_TODO,
-    DELETE_TODO,
+    DELETE_TODO, GET_ALL_TODOS,
     MARK_CANCEL,
     MARK_DONE,
 } from "../constants/actionTypes";
@@ -24,4 +24,9 @@ export const markDone = (id) => ({
 export const markCancel = (id) => ({
     type: MARK_CANCEL,
     id
+});
+
+export const getAllTodos = (allTodos) =>({
+    type: GET_ALL_TODOS,
+    allTodos
 });
