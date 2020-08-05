@@ -11,7 +11,7 @@ const mapDispatchToProps = (dispatch) => {
         markDone: (id) => dispatch(markDone(id)),
         markCancel: (id) => dispatch(markCancel(id))
     }
-}
+};
 
-const TodoContainer = connect(null, mapDispatchToProps)(Todo)
+const TodoContainer = connect(null, mapDispatchToProps)(Todo);
 export default TodoContainer

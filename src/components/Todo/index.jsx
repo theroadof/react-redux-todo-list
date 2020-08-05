@@ -5,17 +5,17 @@ import './index.css'
 
 class Todo extends React.Component {
     handleDelete = (e) => {
-        e.stopPropagation()
+        e.stopPropagation();
         this.props.deleteTodo(this.props.id)
-    }
+    };
 
-    handleMark = (e) => {
+    handleMark = () => {
         if (this.props.status === todoStatus.DOING) {
             this.props.markDone(this.props.id)
         } else {
             this.props.markCancel(this.props.id)
         }
-    }
+    };
 
     render() {
         return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
@@ -29,5 +29,5 @@ class Todo extends React.Component {
 Todo.propsTypes = {
     text: PropTypes.string.isRequired,
     deleteTodo: PropTypes.func.isRequired
-}
+};
 export default Todo

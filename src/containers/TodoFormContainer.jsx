@@ -4,6 +4,6 @@ import {connect} from "react-redux"
 
 const mapDispatchToProps = (dispatch) => ({
     addTodo: (text) => dispatch(addTodo(text))
-})
-const TodoFormContainer = connect(null, mapDispatchToProps)(TodoForm)
+});
+const TodoFormContainer = connect(null, mapDispatchToProps)(TodoForm);
 export default TodoFormContainer

@@ -7,8 +7,8 @@ const mapStateToProps = (state) => {
     return {
         todoList: state.todoList
     }
-}
+};
 
 
-const TodoListContainer = connect(mapStateToProps)(TodoList)
+const TodoListContainer = connect(mapStateToProps)(TodoList);
 export default TodoListContainer

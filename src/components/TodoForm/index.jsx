@@ -5,9 +5,9 @@ class TodoForm extends React.Component {
         super(props);
         this.state = {
             text: ""
-        }
+        };
 
-        this.handleChange = this.handleChange.bind(this)
+        this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
@@ -15,7 +15,7 @@ class TodoForm extends React.Component {
         if (this.state.text.length === 0) {
             return
         }
-        this.props.addTodo(this.state.text)
+        this.props.addTodo(this.state.text);
         this.setState({
             text: ''
         })

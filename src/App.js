@@ -13,7 +13,8 @@ function App() {
                     <p>Todo List</p>
                     <ul>
                         <li className="App-link"><Link to={"/done-list"}>go to done page</Link></li>
-                        <li className="App-link"><Link to={"/"}>show all list</Link></li>
+                        <li className="App-link"><Link to={"/"}>go to list page</Link></li>
+                        <li><Link to={"/all-list"}>get all list</Link></li>
                     </ul>
                     <Route path={"/done-list"} component={DoneListContainer}/>
                     <Route exact path={"/"} render={() => {
@@ -21,6 +22,13 @@ function App() {
                             <div>
                                 <TodoListContainer/>
                                 <TodoFormContainer/>
+                            </div>
+                        )
+                    }}/>
+                    <Route path={"/all-list"} render={()=>{
+                        return (
+                            <div>
+
                             </div>
                         )
                     }}/>
