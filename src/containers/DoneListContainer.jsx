@@ -4,7 +4,7 @@ import todoStatus from "../constants/todoStatus";
 
 const mapStateToProps = (state) => {
     return {
-        doneList: state.todoList.filter(todo => (todo.status === todoStatus.DONE))
+        doneList: state.todoList.filter(todo => (todo.status === todoStatus.FALSE))
     }
 };
 

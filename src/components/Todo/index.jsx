@@ -12,7 +12,7 @@ class Todo extends React.Component {
     };
 
     handleMark = () => {
-        if (this.props.status === todoStatus.DOING) {
+        if (this.props.status === todoStatus.TRUE) {
             this.props.markDone(this.props.id)
         } else {
             this.props.markCancel(this.props.id)
@@ -20,7 +20,7 @@ class Todo extends React.Component {
     };
 
     render() {
-        return <div className={`todo${this.props.status === todoStatus.DOING ? '' : ' is-done'}`}
+        return <div className={`todo${this.props.status === todoStatus.TRUE ? '' : ' is-done'}`}
                     onClick={this.handleMark}>
             <Space direction="horizontal" >
                 <Card hoverable={true} size={"small"} bodyStyle={{color:"white",backgroundColor:"#1890ff"}}	>{this.props.text}</Card>

@@ -9,8 +9,8 @@ class TodoListApi {
         });
     }
 
-    static updateTodoById(id) {
-        return axios.put(`${TODO_LIST_API_URL}/${id}}`);
+    static updateTodoById(id,todo) {
+        return axios.put(`${TODO_LIST_API_URL}/${id}}`,todo);
     }
 
     static createTodo(todo) {

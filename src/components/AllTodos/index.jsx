@@ -12,7 +12,7 @@ class AllTodos extends React.Component{
     }
 
     render() {
-        console.log(this.props)
+        console.log(this.props.allTodos)
         return (
             <div>
                 {this.props.allTodos.map((todo,index)=>
