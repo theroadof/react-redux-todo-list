@@ -8,15 +8,19 @@ const todoList = (state = [], action) => {
             state.map(todo=>{
                 if(todo.id === action.id){
                     todo.status = todoStatus.FALSE;
+                    return todo
                 }
+                return todo;
             });
             newState=JSON.parse(JSON.stringify(state));
             return newState;
         case MARK_CANCEL:
             state.map(todo=>{
                 if(todo.id === action.id){
-                    todo.status = todoStatus.TRUE
+                    todo.status = todoStatus.TRUE;
+                    return todo
                 }
+                return todo;
             });
             newState=JSON.parse(JSON.stringify(state));
             return newState;
