@@ -13,11 +13,14 @@ class Todo extends React.Component {
     };
 
     handleMark = () => {
-        if (this.props.todo.status === todoStatus.TRUE) {
-            this.props.markDone(this.props.todo.id)
-        } else {
-            this.props.markCancel(this.props.todo.id)
-        }
+        TodoListApi.updateTodoById(this.props.todo.id,{
+            id: this.props.todo.id,
+            text: this.props.todo.text,
+            status: !this.props.todo.status
+        }).then((response)=>{
+            this.props.todo.status === todoStatus.TRUE?
+                this.props.markDone(response.data.id):this.props.markCancel(response.data.id);
+        })
     };
 
     render() {
