@@ -2,7 +2,7 @@ import todoStatus from "../constants/todoStatus";
 import {ADD_TODO, DELETE_TODO, GET_ALL_TODOS, MARK_CANCEL, MARK_DONE} from "../constants/actionTypes";
 
 const todoList = (state = [], action) => {
-    var newState;
+    let newState;
     switch (action.type) {
         case MARK_DONE:
             state.map(todo=>{

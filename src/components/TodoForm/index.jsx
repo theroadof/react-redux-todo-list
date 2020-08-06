@@ -37,7 +37,7 @@ class TodoForm extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="App">
                 <Space>
                     <Input style={{width: 200}} value={this.state.text} onChange={this.handleChange}
                            placeholder="write something to do"/>

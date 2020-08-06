@@ -9,17 +9,21 @@ import TodoListApi from "../../model/axios";
 class Todo extends React.Component {
     handleDelete = (e) => {
         e.stopPropagation();
-        this.props.deleteTodo(this.props.todo.id)
+        TodoListApi.deleteTodoById(this.props.todo.id)
+            .then(() => {
+                    this.props.deleteTodo(this.props.todo.id)
+                }
+            )
     };
 
     handleMark = () => {
-        TodoListApi.updateTodoById(this.props.todo.id,{
+        TodoListApi.updateTodoById(this.props.todo.id, {
             id: this.props.todo.id,
             text: this.props.todo.text,
             status: !this.props.todo.status
-        }).then((response)=>{
-            this.props.todo.status === todoStatus.TRUE?
-                this.props.markDone(response.data.id):this.props.markCancel(response.data.id);
+        }).then((response) => {
+            this.props.todo.status === todoStatus.TRUE ?
+                this.props.markDone(response.data.id) : this.props.markCancel(response.data.id);
         })
     };
 
