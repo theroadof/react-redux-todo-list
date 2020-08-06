@@ -18,13 +18,14 @@ class TodoForm extends React.Component {
         if (this.state.text.length === 0) {
             return
         }
-        this.props.addTodo(this.state.text);
         TodoListApi.createTodo({
             text: this.state.text,
             status: true
-        });
-        this.setState({
-            text: ''
+        }).then((response) => {
+            this.props.addTodo(response.data.id,this.state.text);
+            this.setState({
+                text: ''
+            })
         })
     }
 

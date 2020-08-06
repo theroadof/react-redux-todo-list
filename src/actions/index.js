@@ -5,9 +5,10 @@ import {
     MARK_DONE,
 } from "../constants/actionTypes";
 
-export const addTodo = (text) => (
+export const addTodo = (id,text) => (
     {
         type: ADD_TODO,
+        id,
         text
     }
 );

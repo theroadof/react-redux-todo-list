@@ -3,7 +3,7 @@ import Axios from "axios";
 const axios = Axios.create();
 axios.interceptors.request.use((config) => {
     if (config.method === 'post') {
-        config.data = JSON.stringify(config.data)
+        config.data = JSON.stringify(config.data);
     }
     return config;
 });

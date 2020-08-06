@@ -1,20 +1,33 @@
 import todoStatus from "../constants/todoStatus";
-import {ADD_TODO, DELETE_TODO, MARK_CANCEL, MARK_DONE} from "../constants/actionTypes";
+import {ADD_TODO, DELETE_TODO, GET_ALL_TODOS, MARK_CANCEL, MARK_DONE} from "../constants/actionTypes";
 
 const todoList = (state = [], action) => {
-    console.log(state)
+    var newState;
     switch (action.type) {
         case MARK_DONE:
-            state[action.id].status = todoStatus.FALSE;
-            return [...state];
+            state.map(todo=>{
+                if(todo.id === action.id){
+                    todo.status = todoStatus.FALSE;
+                }
+            });
+            newState=JSON.parse(JSON.stringify(state));
+            return newState;
         case MARK_CANCEL:
-            state[action.id].status = todoStatus.TRUE;
-            return [...state];
+            state.map(todo=>{
+                if(todo.id === action.id){
+                    todo.status = todoStatus.TRUE
+                }
+            });
+            newState=JSON.parse(JSON.stringify(state));
+            return newState;
         case ADD_TODO:
-            return [...state, {id:state.length, text: action.text, status: todoStatus.TRUE}];
+            return [...state, {id:action.id, text: action.text, status: todoStatus.TRUE}];
         case DELETE_TODO:
-            state.splice(action.id, 1);
-            return [...state];
+            return state.filter(todo=>(
+                todo.id !== action.id
+            ));
+        case GET_ALL_TODOS:
+            return action.allTodos;
         default:
             return state
     }

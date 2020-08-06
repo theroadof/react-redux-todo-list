@@ -6,7 +6,7 @@ class DoneList extends React.Component {
         return (
             <div className={"App"}>
                 {this.props.doneList.map((todo, index) =>
-                    <TodoContainer key={index} id={todo.id} status={todo.status} text={todo.text} />)}
+                    <TodoContainer key={index} todo={todo} />)}
             </div>
         )
     }

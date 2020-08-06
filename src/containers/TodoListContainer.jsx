@@ -1,4 +1,5 @@
 import TodoList from "../components/TodoList";
+import {getAllTodos} from "../actions";
 
 const {connect} = require("react-redux");
 
@@ -9,6 +10,12 @@ const mapStateToProps = (state) => {
     }
 };
 
+const mapDispatchToProps = (dispatch) => {
+    return {
+        getTodos: (data) => dispatch(getAllTodos(data))
+    }
+};
 
-const TodoListContainer = connect(mapStateToProps)(TodoList);
+
+const TodoListContainer = connect(mapStateToProps,mapDispatchToProps)(TodoList);
 export default TodoListContainer
