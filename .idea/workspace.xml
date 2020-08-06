@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="[axios][Teddy]refactor:modify text span to card">
+    <list default="true" id="a6ccac75-833a-4030-8efb-b94763e14b36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AllTodos/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DoneList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DoneList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todo/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todo/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoForm/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TodoList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TodoList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/AllTodosContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TodoFormContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TodoFormContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/TodoListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/TodoListContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/axios.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/axiosPacking.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/axiosPacking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/allTodos.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/todoList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/todoList.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +63,7 @@
       <workItem from="1596589314601" duration="22396000" />
       <workItem from="1596636226400" duration="3391000" />
       <workItem from="1596675587307" duration="1378000" />
-      <workItem from="1596680292953" duration="12048000" />
+      <workItem from="1596680292953" duration="13211000" />
     </task>
     <task id="LOCAL-00001" summary="[Show_Done_List][Teddy]feature:add doneList component and container">
       <created>1596547053138</created>
@@ -164,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596614087290</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[todo-list][Teddy]feature:implement post request when add todo">
+      <created>1596704635896</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1596704635896</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +202,7 @@
     <MESSAGE value="[axios][Teddy]refactor:add CloseOutlined icon to todo" />
     <MESSAGE value="[axios][Teddy]refactor:modify CloseOutlined icon to DeleteOutlined icon" />
     <MESSAGE value="[axios][Teddy]refactor:modify text span to card" />
-    <option name="LAST_COMMIT_MESSAGE" value="[axios][Teddy]refactor:modify text span to card" />
+    <MESSAGE value="[todo-list][Teddy]feature:implement post request when add todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="[todo-list][Teddy]feature:implement post request when add todo" />
   </component>
 </project>
